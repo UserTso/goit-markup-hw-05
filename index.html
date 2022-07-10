@@ -57,7 +57,7 @@
       <section class="hyro overlay">
         <div class="container">
           <h1 class="hyro-text">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hyro-button">Заказать услугу</button>
+          <button type="button" class="hyro-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Про роботу компанії -->
@@ -411,6 +411,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-modal" data-modal-close>
+          <svg class="net-icons close" width="18px" height="18px">
+            <use href="./images/symbol-defs2.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
