@@ -94,6 +94,11 @@ h1,h2,h3,p,ul {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
+
+        transition: 250ms cubic-bezier(0.4,
+                    0,
+                    0.2,
+                    1);
         }
 .link-nav.current {
     color: var(--bg-hover-logo);
@@ -114,10 +119,7 @@ h1,h2,h3,p,ul {
 .link-nav:hover,
 .link-nav:focus {
     color: var(--bg-hover-logo);
-    transition: 250ms cubic-bezier(0.4,
-                0,
-                0.2,
-                1);
+   
 }
 
 /* link-auth */
@@ -140,6 +142,8 @@ h1,h2,h3,p,ul {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-auth:hover,
@@ -151,10 +155,7 @@ h1,h2,h3,p,ul {
 .link-auth:hover .icon-auth, 
 .link-auth:focus .icon-auth {
     fill: var(--bg-hover-logo);
-    transition: 250ms cubic-bezier(0.4,
-                0,
-                0.2,
-                1);
+   
 }
 
 
@@ -230,15 +231,17 @@ h1,h2,h3,p,ul {
     top:0;
     left:0;
     width: 100%;
-    height: 1024px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
@@ -481,6 +484,11 @@ display: flex;
     justify-content: center;
     border-radius: 50px;
     fill: #AFB1B8;
+
+    transition: 250ms cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
 }
 .net-list:not(:last-child) {
     margin-right: 10px;
@@ -491,10 +499,7 @@ display: flex;
     background-color: var(--bg-hover-logo);
     border-radius: 50px;
     fill: #FFFFFF;
-    transition: 250ms cubic-bezier(0.4,
-            0,
-            0.2,
-            1);
+    
 }
 .net-link:hover .net-icons,
 .net-link:focus .net-icons {
@@ -535,6 +540,11 @@ align-items: center;
     border-radius: 4px;
     width: 170px;
     height: 92px;
+
+        transition: 250ms cubic-bezier(0.4,
+                    0,
+                    0.2,
+                    1);
    
 }
 
@@ -542,20 +552,14 @@ align-items: center;
 .link-clients:focus {
     color: var(--bg-hover-logo);
     border-color: var(--bg-hover-logo);
-    transition: 250ms cubic-bezier(0.4,
-                0,
-                0.2,
-                1);
+
 }
 
 
 .link-clients:hover .icons-clients,
 .link-clients:focus .icons-clients {
     fill: var(--bg-hover-logo);
-    transition: 250ms cubic-bezier(0.4,
-                0,
-                0.2,
-                1);
+
 }
 
 .item-clients:not(:last-child) {
@@ -564,6 +568,11 @@ align-items: center;
 
 .icons-clients {
     fill: #AFB1B8;
+
+        transition: 250ms cubic-bezier(0.4,
+                    0,
+                    0.2,
+                    1);
 
 }
 .icons-clients:hover,
@@ -635,16 +644,18 @@ align-items: center;
         font-size: 14px;
         line-height: 1.71;
         font-style: normal;
+
+        transition: 250ms cubic-bezier(0.4,
+                    0,
+                    0.2,
+                    1);
 }
 
 
 .footer-data:hover,
 .footer-data:focus {
     color: var(--bg-hover-logo);
-    transition: 250ms cubic-bezier(0.4,
-                0,
-                0.2,
-                1);
+  
 }
 
 .footer-subtitle {
@@ -711,6 +722,11 @@ cursor: pointer;
     border-radius: 4px;
 
     padding: 6px 22px;
+
+    transition: 250ms cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
 }
 
 .btn-element {
@@ -724,10 +740,7 @@ cursor: pointer;
     color: rgba(255, 255, 255, 1);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4,
-                0,
-                0.2,
-                1);
+   
 }
 
 .list-portfolio {
@@ -735,6 +748,8 @@ cursor: pointer;
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
+
+    
 }
 
 .flex-element {
@@ -743,6 +758,10 @@ cursor: pointer;
     margin-right: 30px;
     margin-bottom: 30px;
 
+    transition: transform 250ms cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
     
     
 }
@@ -781,47 +800,40 @@ cursor: pointer;
     top: 0;
     width: 100%;
     height: 100%;
-    /* background-color: rgb(255, 127, 127, 0.5); */
 
-    transform: translateY(100%);
-}
-
-.flex-element:hover .text-img,
-.flex-element:focus .text-img {
-    background-color: rgba(33, 150, 243, 0.9);
+ background-color: rgba(33, 150, 243, 0.9);
     color: #FFFFFF;
-    opacity: 1;
-    transform: translateY();
-    transition: 250ms opacity linear;
-    transition: 250ms cubic-bezier(0.4,
+    transform: translateY(100%);
+    
+    transition: transform 250ms cubic-bezier(0.4,
                 0,
                 0.2,
-                1);
-        
-} 
-.link-portfolio:hover .text-overlay {
-transform: translateY(0);
-transition: 250ms cubic-bezier(0.4,
-    0,
-    0.2,
-    1);
+                1),
+    opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+
 }
+
+.link-portfolio:hover .text-overlay,
+.link-portfolio:focus .text-overlay {
+transform: translateY(0);
+opacity: 1;
+
+} 
+
 
 
 .text-img {
 
-    position: absolute;
-        width: 370px;
         padding: 63px 24px;
-        left: 0;
-        bottom: 0;
-        opacity: 0;
-
-        display: block;
+        color: #FFFFFF;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 1.56;
+
 }
 
 /* BLOK PORTFOLIO */
